@@ -4,7 +4,7 @@ regions:
   - us-east-1
 filters:
   instance-state-name: running
- keyed_groups:
+keyed_groups:
   - key: tags.Environment
     prefix: env
   - key: tags.OS

@@ -1,6 +1,6 @@
 ---
 - name: Linux patch workflow scaffold (connectivity check only)
-  hosts: "{{ target_group | default('linux') }}"
+  hosts: os_linux
   gather_facts: false
   tasks:
     - name: Verify Ansible connectivity

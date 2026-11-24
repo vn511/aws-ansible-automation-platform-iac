@@ -1,6 +1,6 @@
 ---
 - name: Windows patch workflow scaffold (connectivity check only)
-  hosts: "{{ target_group | default('windows') }}"
+  hosts: os_windows
   gather_facts: false
   tasks:
     - name: Verify WinRM connectivity
