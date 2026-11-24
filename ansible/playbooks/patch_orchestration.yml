@@ -1,0 +1,8 @@
+---
+- name: Orchestrated patch workflow scaffold
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Require explicit implementation before orchestration
+      ansible.builtin.fail:
+        msg: "Patch orchestration is not implemented. Run only the connectivity smoke-test playbooks against authorized lab targets."

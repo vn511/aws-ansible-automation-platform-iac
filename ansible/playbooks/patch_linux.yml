@@ -1,0 +1,10 @@
+---
+- name: Linux patch workflow scaffold (connectivity check only)
+  hosts: "{{ target_group | default('linux') }}"
+  gather_facts: false
+  tasks:
+    - name: Verify Ansible connectivity
+      ansible.builtin.ping:
+    - name: State implementation boundary
+      ansible.builtin.debug:
+        msg: "Connectivity only: patch, reboot, and validation tasks are not implemented."

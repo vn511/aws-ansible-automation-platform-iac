@@ -1,0 +1,10 @@
+---
+- name: Windows patch workflow scaffold (connectivity check only)
+  hosts: "{{ target_group | default('windows') }}"
+  gather_facts: false
+  tasks:
+    - name: Verify WinRM connectivity
+      ansible.windows.win_ping:
+    - name: State implementation boundary
+      ansible.builtin.debug:
+        msg: "Connectivity only: Windows Update, reboot, and validation tasks are not implemented."
